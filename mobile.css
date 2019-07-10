@@ -318,9 +318,18 @@ form{
     width:100%;
     max-width: 800px;
     text-align:center;
+    padding:0 40px;
 
 }
 .page-content a{
     border:2px solid white;
     padding:10px 20px;
+    display: inline-block;
+    text-decoration:none;
+    transition: 0.4s linear;
+}
+
+.page-content a:hover{
+    color:#fff;
+    background:#ff7979;
 }
