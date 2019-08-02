@@ -85,5 +85,5 @@ def search():
     return "requets cannot be served using GET request"
 
 if __name__ =="__main__":
-    app.run(debug=True)
+    app.run()
     # initalize()
