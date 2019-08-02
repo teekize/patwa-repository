@@ -1,0 +1,59 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            patwa kenya
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/mobile.css">
+    </head>
+    <body>
+            <header>
+                    <div class="navigation">
+                        <nav>
+                            <p>Patwa</p>
+
+                            <div class="menu">
+                            <ul>
+
+                                <li><a href="{{url_for('login')}}">Login</a></li>
+                                <li><a href="{{url_for('about')}}">About</a></li>
+                                <li><a href="{{url_for('landing')}}">Home</a></li>
+                            
+                            </ul>
+                            </div>
+
+                        </nav>
+                    </div>
+            </header>
+        
+    <div class="container1">
+        <!-- <div class="page-content">
+        <h1>
+            PATWA KENYA
+        </h1>
+        <P>
+            Is the one place where you are sure to locate the lost items.
+        </P>
+        <a href="{{url_for('landing')}}">Get Started</a>
+    </div> -->
+    
+    <div class="lost">
+            <h3>lost item </h3>
+            <div class="img-div"><img src="/static/card.jpg" width=300.18 height="125"></div>
+        
+            <!-- <div class="para">
+        <p>this id was reported on Friday 27/6/2019 in the area code of Juja<br>
+            the quick brown fox jumped over the lazy dog. 
+            this has only been reporets to the hjkjf tgdhhd tgegf tghbdfgg tgtfdh ddtgbhd
+            <br>thrftgb etfbjbfy eftbfeh tgef tgbeftff rdvhevf vedh
+        </p> -->
+    <!-- </div> -->
+        <h6>was found by {{id_information["who_found"]}}</h6>
+    </div>
+    
+    
+    </div>
+    </body>
+</html>

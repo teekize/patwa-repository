@@ -61,7 +61,7 @@ nav p{
     padding:0px 4px;
 }
 .container1{
-    margin-left:0;
+    /* margin-left:10px; */
     /* margin-top:25px; */
     min-height:400px;
     padding:22px;
@@ -71,11 +71,11 @@ nav p{
     background-color:#6D214F;
     border: wheat 1px hidden;
     color:white;
-    
+/*     
     background-image:url("http://placeimg.com/640/480/tech/grayscale" );
     background-repeat: no-repeat;
     background-position: center;
-   background-size:cover;
+   background-size:cover; */
   
     
     /* background */
@@ -98,25 +98,64 @@ nav p{
     font-size: 12px;
 }
 
-.container1 input{
+.container1 input[type=text]{
     /* height:25px; */
+    margin: 0%;
     margin-top:90px;
-    width:75%;
+    
+    width:70%;
     margin-right:0;
     padding:10px;
     color:grey;
     background:whitesmoke;
     border:none;
+    
 }
-.container1 button{
+.container1 input[type=submit]{
+    margin: 0%;
+    padding: 0;
     float:right;
     overflow:hidden;
-    margin-left:-10px;
+    width:28%;
+    /* margin-left:-4px; */
     margin-top:90px;
-    padding:9px;
-    border:1px white hidden;
+    border: none;
+    border-radius: 5px;
+    padding:10px 0px;
+    /* border:1px white hidden; */
     background:whitesmoke;
     /* margin-bottom:12px; */
+}
+.lost{
+    align-self: auto;
+   min-width: 70%;
+    border: #fff solid 2px;
+    /* padding-left:50px; */
+    background-color: grey;
+
+}
+/* .lost p{
+    
+} */
+.img-div{
+    /* float: left; */
+    width: 38%;
+}
+.img-div img{
+    background-size: cover;
+    
+
+}
+.container1 h3 h4{
+    padding: 4px 50%;
+} 
+.para{
+    width: 40%;
+    float: right;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom:20%;
+
 }
 
 /* this is just the foooter */
@@ -186,7 +225,7 @@ footer{
     border-radius: 3%;
     text-align:center;
     background-blend-mode: darken;
-    background:url("http://placeimg.com/640/480/landscape") no-repeat ;
+    /* background:url("http://placeimg.com/640/480/landscape") no-repeat ; */
     background-size: cover;
     
 }
@@ -304,7 +343,7 @@ form{
     right: 0%;
     width:100%;
     height:100vh;
-    background:url("patwa-back.jpg") no-repeat;
+    /* background:url("patwa-back.jpg") no-repeat; */
     background-size:cover;
     opacity: .3;
 }
@@ -336,3 +375,4 @@ form{
     color:#fff;
     background:#ff7979;
 }
+

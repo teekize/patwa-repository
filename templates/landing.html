@@ -6,7 +6,7 @@
             patwa kenya
         </title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="mobile.css">
+        <link rel="stylesheet" href="/static/mobile.css">
     </head>
     <!-- <video autoplay muted loop>
         <source src="FOCUS.mp4" type="video/mp4">
@@ -23,9 +23,9 @@
                             <div class="menu">
                             <ul>
 
-                                <li><a href=login.html>Login</a></li>
-                                <li><a href=about.html>About</a></li>
-                                <li><a href=landing.html>Home</a></li>
+                                <li><a href="{{url_for('login')}}">Login</a></li>
+                                <li><a href="{{url_for('about')}}">About</a></li>
+                                <li><a href="{{url_for('landing')}}">Home</a></li>
                             
                             </ul>
                             </div>
@@ -38,6 +38,16 @@
             <!-- <h2>Patwa </h2> -->
             <div class="headingclass">
                 <h2>Focus on work </h2>
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                <ul class=flashes>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+            {% endwith %}
+            
             <!-- </div> -->
                 <h2>We search for you</h2>
             </div>
@@ -45,10 +55,12 @@
                 <!-- <p class="separator">
                         search on <span>patwa</span>
                 </p> -->
-            
-
-                <input type="email" name="email" placeholder="enter mail">
-                <button type="submit" value="join">Patwa</button>
+            <form action="{{url_for('search')}}" method="post" autocomplete="off" >
+                <div>
+                <input type="text" name="ID" placeholder="search id">
+                <input class ="submit" type="submit" value="Patwa"  >
+            </div>
+            </form>
         </div>
 
     <section class="section1">
