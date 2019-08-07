@@ -5,6 +5,9 @@ body{
     background-color:#6D214F;
     color:whitesmoke;
 }
+*:focus {
+    outline: none;
+}
 ul{
     list-style: none;
 }
@@ -113,6 +116,7 @@ nav p{
     color:grey;
     background:whitesmoke;
     border:none;
+    border-radius: 2.5px;
     
 }
 .container1 input[type=submit]{
@@ -170,7 +174,7 @@ footer{
     bottom: 0;
     color:#57606f;
     text-align:center;
-    min-height:155px;
+    min-height:159px;
     padding: 20px;
 }
 .center-container{
