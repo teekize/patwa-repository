@@ -24,24 +24,29 @@ a{
 .wrapper{
     margin:0;
     overflow-y: auto;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 span{
     color:#6D214F;
 }
 .navigation{
-    border-bottom:2px black solid;
+    /* border-bottom:2px black solid; */
     padding:25px;
     padding-bottom:32px;
-    background-color:#57606f;
+    /* background-color:#57606f; */
+    background-color: #6D214F;
     /* margin:2px; */
 }
 nav p{
+    overflow: hidden;
+    font-family: 'Libre Caslon Text', serif;
     margin:0px;
     float:left;
-    padding:0px;
-    font-size:15px;
+    padding:0px 10px;
+    /* padding-bottom: 0px; */
+    font-weight: 200;
+    font-size:17px;
 }
 .menu{
     /* padding: 14px; */
@@ -102,9 +107,8 @@ nav p{
     /* height:25px; */
     margin: 0%;
     margin-top:90px;
-    
-    width:70%;
-    margin-right:0;
+    height: 30px;
+    width:90%;
     padding:10px;
     color:grey;
     background:whitesmoke;
@@ -166,22 +170,19 @@ footer{
     bottom: 0;
     color:#57606f;
     text-align:center;
-    min-height:150px;
-    padding: 25px;
+    min-height:155px;
+    padding: 20px;
 }
 .center-container{
    font-family: 'PT Sans Narrow', sans-serif;
-    
     margin:0px auto;
-    padding:14 0pxpx;
-    
-    
-    font-size:7px;
+    padding:10 0pxpx;
+    font-size:10px;
 }
  
-.center-container p{
-    font-size:11px;
-}
+/* .center-container p{
+    font-size:10px;
+} */
 
 .footer1{
     font-size:12px;
@@ -190,6 +191,20 @@ footer{
     padding:0px;
     color:#57606f;
 }
+.footer1 ul{
+    float:left;
+    overflow: hidden;
+}
+.footer1 ul li{
+    text-align: center;
+    color:#57606f;
+    display: inline-block;
+    /* margin-top:1.5px; */
+    padding:4px;
+    margin-left:0px;
+    
+}
+
 
 /*section1*/
 
@@ -227,19 +242,6 @@ footer{
     background-blend-mode: darken;
     /* background:url("http://placeimg.com/640/480/landscape") no-repeat ; */
     background-size: cover;
-    
-}
-.footer1 ul{
-    float:left;
-    overflow: hidden;
-}
-.footer1 ul li{
-    
-    color:#57606f;
-    display: inline-block;
-    /* margin-top:1.5px; */
-    padding:4px;
-    margin-left:2px;
     
 }
 
@@ -376,3 +378,19 @@ form{
     background:#ff7979;
 }
 
+/* @media screen and (min-width: 480px) {
+    
+
+
+.container1 input[type=text]{
+
+    height:24px;
+    width:70%;
+    
+    
+} */
+/* .container1 input[type=submit]{
+    
+
+} */
+  /* } */
