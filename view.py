@@ -1,10 +1,6 @@
 from flask import (Flask,render_template, url_for,
                      redirect,request,g, flash)
 
-from app.models.database import Database, initalize
-import pdb
-
-db =Database()
 app =Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
@@ -48,11 +44,6 @@ def login():
 def register():
     if request.method =="POST":
         form =request.form.get("Username"), request.form.get('Password')
-
-        insert ="insert into users values( null, ?,?)"
-
-        resp =db.query_(insert,form)
-        flash('You were successfully logged in {}'.format(resp))
         return redirect(url_for('landing'))
     return render_template('login.html')
 
@@ -72,18 +63,9 @@ def search():
         print(form_data)
         if int(form_data) == id_information["id_number"]:
             return render_template('lost_id.html', id_information=id_information)
-    
 
-        # query ="select item_name, item_id from collected_items where lost_item_id = ?"
-        
-        # form_data =request.form.get("ID", "bado haiko")
-        # resp =db.query_(query,form_data)
-        # # print(form_)
-        
-        # response =Database.query_(query, form_)
         return redirect(url_for('landing'))
     return "requets cannot be served using GET request"
 
 if __name__ =="__main__":
     app.run()
-    # initalize()
